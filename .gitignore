@@ -1,0 +1,15 @@
+# Archivos compilados
+out/
+bin/
+*.class
+
+# VS Code
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp

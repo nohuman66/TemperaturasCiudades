@@ -27,7 +27,7 @@ public class TemperaturasVista extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        // Panel superior: rango de fechas + gráfica
+
         JPanel pnlRango = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 10));
         pnlRango.add(new JLabel("Desde"));
         spnDesde = crearSelectorFecha();
@@ -38,7 +38,7 @@ public class TemperaturasVista extends JFrame {
         btnGraficar = new JButton("Graficar promedios");
         pnlRango.add(btnGraficar);
 
-        // Panel superior: fecha específica + ciudades extremas
+     
         JPanel pnlFecha = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 10));
         pnlFecha.add(new JLabel("Fecha"));
         spnFechaConsulta = crearSelectorFecha();
@@ -82,7 +82,7 @@ public class TemperaturasVista extends JFrame {
         spinner.setValue(Date.from(fecha.atStartOfDay(ZoneId.systemDefault()).toInstant()));
     }
 
-    // getters
+
 
     public LocalDate getFechaDesde() {
         return aLocalDate(spnDesde);
@@ -118,7 +118,7 @@ public class TemperaturasVista extends JFrame {
         btnBuscarExtremos.addActionListener(evento);
     }
 
-    // metodos publicos
+
 
     public void activarPestaña(int posicion) {
         if (posicion >= 0 && posicion < tpTemperaturas.getTabCount()) {

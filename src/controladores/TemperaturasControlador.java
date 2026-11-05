@@ -41,7 +41,7 @@ public class TemperaturasControlador {
             return;
         }
 
-        // Fechas iniciales de los selectores: primer y último día con datos
+
         var fechaMin = TemperaturasServicio.getFechaMinima(temperaturas);
         var fechaMax = TemperaturasServicio.getFechaMaxima(temperaturas);
         fechaMin.ifPresent(vista::setFechaDesde);

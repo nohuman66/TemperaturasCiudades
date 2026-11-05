@@ -62,7 +62,7 @@ public class TemperaturasServicio {
                 .collect(Collectors.toList());
     }
 
-    // Promedio de temperatura por ciudad (ordenado alfabéticamente por ciudad)
+ 
     public static Map<String, Double> getPromedioPorCiudad(List<Temperatura> temperaturas) {
         return temperaturas.stream()
                 .collect(Collectors.groupingBy(Temperatura::getCiudad,
